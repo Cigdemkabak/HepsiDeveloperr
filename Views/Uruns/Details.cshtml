@@ -1,0 +1,47 @@
+﻿@model HepsiDeveloper.Data.Entities.Urun
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutCreate.cshtml";
+}
+
+<h1>Ürün Detayları</h1>
+
+<div class="row mt-5 ">
+    <div class="col-6">
+        <h4 class="text-primary">Ürün Bilgileri</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Ad)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Aciklama)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Aciklama)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Fiyat)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Fiyat)
+            </dd>
+        </dl>
+    </div>
+    <div class="col-6">
+        <h4 class="text-primary">Resim</h4>
+        <hr />
+        @foreach (var item in Model.Resimler)
+        {
+            <img src="/resimler/@item.DosyaAdi" style="max-height: 100px" class="img-thumbnail" />
+        }
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Düzenle</a> |
+    <a asp-action="Index">Ürün Listesine Geri Dön</a>
+</div>

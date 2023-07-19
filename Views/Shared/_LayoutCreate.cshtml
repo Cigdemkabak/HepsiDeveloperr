@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="/assets/css2/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css2/pe-helper.css">
+    <link rel="stylesheet" href="/assets/css2/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css2/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="/assets/css2/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css2/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css2/leaflet.css">
+    <link rel="stylesheet" href="/assets/css2/aos.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css2/style.css">
+
+    <title> Hepsi | Developer</title>
+
+     <style>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.validation-message {
+    color: red;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #888;
+}
+
+
+
+
+    </style>
+
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#site-navbar" class="home-sidenav has-sidebar">
+    <div class="preloader js-preloader flex-center" style="display: none;">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <aside class="main-sidebar">
+        <!-- SITE HEADER -->
+        <header class="site-header" id="site-header">
+            <nav class="navbar navbar-expand-xl" id="site-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="/assets/img/fungi_logo.png" alt="fungi logo"></a>
+                    <img b-5368c2b7gz="" class="d-none d-xl-block img-fluid sidenav-photo" src="/assets/img/ck.jpg" alt="sidenav photo">                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/Home">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Uruns/Create">Ürün Ekle</a>
+                            </li>
+
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Identity/Account/Login">Login</a>
+                            </li>
+                        </ul> <!-- .navbar-nav -->
+                    </div> <!-- .collapse -->
+                </div> <!-- .container -->
+            </nav> <!-- .navbar -->
+        </header> <!-- .site-header -->
+
+        <div class="container">
+    @RenderBody()
+</div>
+
+    </aside>
+</body>
+
+		<script src="/assets/js2/jquery.js"></script>
+		<script src="/assets/js2/popper.min.js"></script>
+		<script src="/assets/js2/bootstrap.min.js"></script>
+		<script src="/assets/js2/imagesloaded.pkgd.min.js"></script>
+		<script src="/assets/js2/isotope.pkgd.min.js"></script>
+		<script src="/assets/js2/swiper-bundle.min.js"></script>
+		<script src="/assets/js2/leaflet.js"></script>
+		<script src="/assets/js2/jquery.waypoints.min.js"></script>
+		<script src="/assets/js2/jquery.counterup.min.js"></script>
+		<script src="/assets/js2/aos.js"></script>
+		<script src="/assets/js2/jquery.preloadinator.min.js"></script>
+		<script src="/assets/js2/vanilla-tilt.min.js"></script>
+		<script src="/assets/js2/script.js"></script>
+ 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)

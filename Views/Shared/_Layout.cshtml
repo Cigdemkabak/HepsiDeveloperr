@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="/assets/css2/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css2/pe-helper.css">
+    <link rel="stylesheet" href="/assets/css2/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css2/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="/assets/css2/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css2/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css2/leaflet.css">
+    <link rel="stylesheet" href="/assets/css2/aos.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css2/style.css">
+
+    <title> Hepsi | Developer</title>
+</head>
+
+
+
+
+
+	<body data-bs-spy="scroll" data-bs-target="#site-navbar" class="home-sidenav has-sidebar">
+		<div class="preloader js-preloader flex-center" style="display: none;">
+			<div class="dots">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+		</div>
+
+		<aside class="main-sidebar">
+			<!-- SITE HEADER -->
+			<header class="site-header" id="site-header">
+				<nav class="navbar navbar-expand-xl" id="site-navbar">
+					<div class="container">
+						<img class="d-none d-xl-block img-fluid sidenav-photo" src="/assets/img/ck.jpg" alt="sidenav photo">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ms-auto mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="/Home/">Home</a>
+								</li>
+
+								   <li class="nav-item">
+		          <a class="nav-link" href="/Uruns/">Ürün Ekle</a>
+		        </li>
+					@*	<li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Uruns" asp-action="">Ürün Ekle</a>
+                        </li>*@
+								
+
+								<li class="nav-item">
+									<a class="nav-link" href="/Identity/Account/Login">Login</a>
+								</li>
+							</ul> <!-- .navbar-nav -->
+						</div> <!-- .collapse -->
+					</div> <!-- .container -->
+				</nav> <!-- .navbar -->
+			</header> <!-- .site-header -->
+		</aside>
+
+		<main class="main-content">
+			<!-- HERO AREA -->
+			<section class="hero-area" id="hero-area">
+				<div class="container">
+					<div class="hero-content d-flex justify-content-center">
+						<div class="row d-flex align-items-center justify-content-center">
+
+							<div class="col-xl-6 order-xl-last image-block">
+								<div class="image-wrapper" data-tilt="" data-tilt-max="10" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+									<ul class="hero-facts">
+										<li>
+											<p>5K<span>+</span></p>
+											<h4>Total <br>Projects</h4>
+										</li>
+										<li>
+											<p>200<span>+</span></p>
+											<h4>Worldwide <br>Clients</h4>
+										</li>
+
+									</ul>
+								</div> <!-- .image-wrapper -->
+							</div> <!-- .image-block -->
+
+							<div class="col-xl-6 order-xl-first content-block">
+								<h1 class="hero-head">
+									<small>Hello,</small>Hepsi <strong>Developer'a</strong>
+									<strong>Hoşgeldiniz!</strong>
+								</h1>
+								<p>
+									Birbirinden <strong>Değerli</strong> 100 <strong>Developer Burada!</strong>
+								</p>
+							
+							</div> <!-- .content-block -->
+
+						</div> <!-- .row -->
+					</div> <!-- .hero-content -->
+				</div> <!-- .container -->
+			
+			</section> <!-- .hero-area -->
+			<!-- PORTFOLIO SECTION -->
+			<section class="portfolio-section section-block" id="portfolio-section" style="background-color:rgb(34,34,34)">
+				<div class="container">
+					<div class="section-title">
+						<h2>Kategoriler</h2>
+						
+					</div><!-- .section-title -->
+					<div class="button-group filter-button-group">
+						<button class="active" data-filter="*">All</button>
+						<button class="" data-filter=".development">Telephone</button>
+						<button class="" data-filter=".design">Computer</button>
+						<button class="" data-filter=".application">Television</button>
+					</div>
+
+					<div class="row grid aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" style="position: relative; height: 439.987px;">
+						<div class="col-lg-4 col-md-6 grid-item programming" style="position: absolute; left: 0px; top: 0px;">
+							<div class="box">
+								<img src="/assets/img/portfolio-item-01.jpg" alt="portfolio image">
+								<div class="box-content">
+									<span class="category">Programming</span>
+									<h3 class="title">Website design for Rainy Design</h3>
+								</div>
+								<div class="icon-box"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal6"><i class="bi bi-plus-lg"></i></a></div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" style="display: none;" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+										<div class="modal-content">
+
+											<div class="modal-body">
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+												<div class="row item-content">
+													<div class="col-xl-12">
+														<img src="/assets/img//portfolio_large_1.jpg" alt="portfolio image">
+													</div>
+													<div class="col-xl-8">
+														<div class="content-wrapper">
+															<h2 class="item-title">Branding for ABC Corporation</h2>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+														</div>
+													</div>
+													<div class="col-xl-4">
+														<div class="meta-wrapper">
+															<ul class="item-meta">
+																<li>Project Type: <span class="meta-value">Graphic Design</span></li>
+																<li>Client: <span class="meta-value">Juwel Khan</span></li>
+																<li>Duration: <span class="meta-value">2 Weeks</span></li>
+																<li>Task: <span class="meta-value">UI/UX, Frontend</span></li>
+																<li>Budget: <span class="meta-value">$2000</span></li>
+															</ul>
+														</div> <!-- .meta-wrapper -->
+													</div>
+												</div> <!-- .row -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 grid-item development application" style="position: absolute; left: 439.987px; top: 0px; display: none;">
+							<div class="box">
+								<img src="/assets/img//portfolio-item-02.jpg" alt="portfolio image">
+								<div class="box-content">
+									<span class="category">Development</span>
+									<h3 class="title">Come on babe light my fire</h3>
+								</div>
+
+
+								<div class="icon-box"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal5"><i class="bi bi-plus-lg"></i></a></div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+										<div class="modal-content">
+
+											<div class="modal-body">
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+												<div class="row item-content">
+													<div class="col-xl-12">
+														<img src="/assets/img//portfolio_large_2.jpg" alt="portfolio image">
+													</div>
+													<div class="col-xl-8">
+														<div class="content-wrapper">
+															<h2 class="item-title">Branding for ABC Corporation</h2>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+														</div>
+													</div>
+													<div class="col-xl-4">
+														<div class="meta-wrapper">
+															<ul class="item-meta">
+																<li>Project Type: <span class="meta-value">Graphic Design</span></li>
+																<li>Client: <span class="meta-value">Juwel Khan</span></li>
+																<li>Duration: <span class="meta-value">2 Weeks</span></li>
+																<li>Task: <span class="meta-value">UI/UX, Frontend</span></li>
+																<li>Budget: <span class="meta-value">$2000</span></li>
+															</ul>
+														</div> <!-- .meta-wrapper -->
+													</div>
+												</div> <!-- .row -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 grid-item application programming design" style="position: absolute; left: 439.987px; top: 0px;">
+							<div class="box">
+								<img src="/assets/img//portfolio-item-03.jpg" alt="portfolio image">
+								<div class="box-content">
+									<span class="category">Design</span>
+									<h3 class="title">When the musics over turn off the light</h3>
+								</div>
+								<div class="icon-box"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal4"><i class="bi bi-plus-lg"></i></a></div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+										<div class="modal-content">
+
+											<div class="modal-body">
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+												<div class="row item-content">
+													<div class="col-xl-12">
+														<img src="/assets/img//portfolio_large_3.jpg" alt="portfolio image">
+													</div>
+													<div class="col-xl-8">
+														<div class="content-wrapper">
+															<h2 class="item-title">Branding for ABC Corporation</h2>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+														</div>
+													</div>
+													<div class="col-xl-4">
+														<div class="meta-wrapper">
+															<ul class="item-meta">
+																<li>Project Type: <span class="meta-value">Graphic Design</span></li>
+																<li>Client: <span class="meta-value">Juwel Khan</span></li>
+																<li>Duration: <span class="meta-value">2 Weeks</span></li>
+																<li>Task: <span class="meta-value">UI/UX, Frontend</span></li>
+																<li>Budget: <span class="meta-value">$2000</span></li>
+															</ul>
+														</div> <!-- .meta-wrapper -->
+													</div>
+												</div> <!-- .row -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 grid-item design application" style="position: absolute; left: 0px; top: 439.987px; display: none;">
+							<div class="box">
+								<img src="/assets/img//portfolio-item-04.jpg" alt="portfolio image">
+								<div class="box-content">
+									<span class="category">Application</span>
+									<h3 class="title">She's got a smile that seems to me</h3>
+								</div>
+								<div class="icon-box"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal3"><i class="bi bi-plus-lg"></i></a></div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+										<div class="modal-content">
+
+											<div class="modal-body">
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+												<div class="row item-content">
+													<div class="col-xl-12">
+														<img src="/assets/img//portfolio_large_4.jpg" alt="portfolio image">
+													</div>
+													<div class="col-xl-8">
+														<div class="content-wrapper">
+															<h2 class="item-title">Branding for ABC Corporation</h2>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+														</div>
+													</div>
+													<div class="col-xl-4">
+														<div class="meta-wrapper">
+															<ul class="item-meta">
+																<li>Project Type: <span class="meta-value">Graphic Design</span></li>
+																<li>Client: <span class="meta-value">Juwel Khan</span></li>
+																<li>Duration: <span class="meta-value">2 Weeks</span></li>
+																<li>Task: <span class="meta-value">UI/UX, Frontend</span></li>
+																<li>Budget: <span class="meta-value">$2000</span></li>
+															</ul>
+														</div> <!-- .meta-wrapper -->
+													</div>
+												</div> <!-- .row -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 grid-item programming design" style="position: absolute; left: 879.974px; top: 0px;">
+							<div class="box">
+								<img src="/assets/img//portfolio-item-05.jpg" alt="portfolio image">
+								<div class="box-content">
+									<span class="category">Programming</span>
+									<h3 class="title">So close no matter how far</h3>
+								</div>
+								<div class="icon-box"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal2"><i class="bi bi-plus-lg"></i></a></div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+										<div class="modal-content">
+
+											<div class="modal-body">
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+												<div class="row item-content">
+													<div class="col-xl-12">
+														<img src="/assets/img//portfolio_large_5.jpg" alt="portfolio image">
+													</div>
+													<div class="col-xl-8">
+														<div class="content-wrapper">
+															<h2 class="item-title">Branding for ABC Corporation</h2>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+														</div>
+													</div>
+													<div class="col-xl-4">
+														<div class="meta-wrapper">
+															<ul class="item-meta">
+																<li>Project Type: <span class="meta-value">Graphic Design</span></li>
+																<li>Client: <span class="meta-value">Juwel Khan</span></li>
+																<li>Duration: <span class="meta-value">2 Weeks</span></li>
+																<li>Task: <span class="meta-value">UI/UX, Frontend</span></li>
+																<li>Budget: <span class="meta-value">$2000</span></li>
+															</ul>
+														</div> <!-- .meta-wrapper -->
+													</div>
+												</div> <!-- .row -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 grid-item development design" style="position: absolute; left: 879.974px; top: 439.987px; display: none;">
+							<div class="box">
+								<img src="/assets/img//portfolio-item-06.jpg" alt="portfolio image">
+								<div class="box-content">
+									<span class="category">Development</span>
+									<h3 class="title">When you are stranger faces looks ugly</h3>
+								</div>
+								<div class="icon-box"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal1"><i class="bi bi-plus-lg"></i></a></div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+										<div class="modal-content">
+
+											<div class="modal-body">
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+												<div class="row item-content">
+													<div class="col-xl-12">
+														<img src="/assets/img//portfolio_large_6.jpg" alt="portfolio image">
+													</div>
+													<div class="col-xl-8">
+														<div class="content-wrapper">
+															<h2 class="item-title">Branding for ABC Corporation</h2>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>
+																Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+														</div>
+													</div>
+													<div class="col-xl-4">
+														<div class="meta-wrapper">
+															<ul class="item-meta">
+																<li>Project Type: <span class="meta-value">Graphic Design</span></li>
+																<li>Client: <span class="meta-value">Juwel Khan</span></li>
+																<li>Duration: <span class="meta-value">2 Weeks</span></li>
+																<li>Task: <span class="meta-value">UI/UX, Frontend</span></li>
+																<li>Budget: <span class="meta-value">$2000</span></li>
+															</ul>
+														</div> <!-- .meta-wrapper -->
+													</div>
+												</div> <!-- .row -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div> <!-- .row -->
+
+				</div> <!-- .container -->
+				
+			
+			</section> <!-- .portfolio-section -->
+					<div class="container">
+						@RenderBody()
+					</div>
+
+
+
+
+
+		<script src="/assets/js2/jquery.js"></script>
+		<script src="/assets/js2/popper.min.js"></script>
+		<script src="/assets/js2/bootstrap.min.js"></script>
+		<script src="/assets/js2/imagesloaded.pkgd.min.js"></script>
+		<script src="/assets/js2/isotope.pkgd.min.js"></script>
+		<script src="/assets/js2/swiper-bundle.min.js"></script>
+		<script src="/assets/js2/leaflet.js"></script>
+		<script src="/assets/js2/jquery.waypoints.min.js"></script>
+		<script src="/assets/js2/jquery.counterup.min.js"></script>
+		<script src="/assets/js2/aos.js"></script>
+		<script src="/assets/js2/jquery.preloadinator.min.js"></script>
+		<script src="/assets/js2/vanilla-tilt.min.js"></script>
+		<script src="/assets/js2/script.js"></script>
+ 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
